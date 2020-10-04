@@ -11,7 +11,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        style="@android:style/Widget.ProgressBar"
+        android:progressTint="@color/colorPrimary"
+        style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+        android:secondaryProgressTint="@color/colorAccent"
+        android:progress="24"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_height="wrap_content"
         />
