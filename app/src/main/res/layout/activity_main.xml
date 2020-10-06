@@ -15,6 +15,7 @@
         style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
         android:secondaryProgressTint="@color/colorAccent"
         android:progress="25"
+        android:secondaryProgress="29"
         android:indeterminateTint="@color/colorPrimary"
         android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
