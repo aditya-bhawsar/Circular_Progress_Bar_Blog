@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,18 +10,27 @@
 
     <ProgressBar
         android:layout_width="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:progressTint="@color/colorPrimary"
         style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
         android:secondaryProgressTint="@color/colorAccent"
         android:progress="25"
-        android:secondaryProgress="29"
+        android:secondaryProgress="90"
         android:indeterminateTint="@color/colorPrimary"
         android:layout_margin="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_height="wrap_content"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:progressTint="@color/colorPrimary"
+        style="@android:style/Widget.Material.Light.ProgressBar"
+        android:secondaryProgressTint="@color/colorAccent"
+        android:indeterminate="false"
+        android:progress="25"
+        android:secondaryProgress="90"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
