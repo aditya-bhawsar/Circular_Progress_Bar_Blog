@@ -33,4 +33,53 @@
         android:layout_height="wrap_content"
         />
 
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:progressTint="@color/colorPrimary"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"
+        android:secondaryProgressTint="@color/colorAccent"
+        android:indeterminate="false"
+        android:progress="25"
+        android:secondaryProgress="90"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:progressTint="@color/colorPrimary"
+        android:secondaryProgressTint="@color/colorAccent"
+        android:indeterminate="false"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:progressTint="@color/colorPrimary"
+        style="@android:style/Widget.Material.Light.ProgressBar"
+        android:secondaryProgressTint="@color/colorAccent"
+        android:indeterminate="false"
+        android:progress="25"
+        android:secondaryProgress="90"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:progressTint="@color/colorPrimary"
+        style="@android:style/Widget.Material.Light.ProgressBar"
+        android:secondaryProgressTint="@color/colorAccent"
+        android:indeterminate="false"
+        android:progress="25"
+        android:secondaryProgress="90"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        />
+
 </LinearLayout>
