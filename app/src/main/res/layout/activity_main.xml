@@ -29,7 +29,7 @@
         android:progress="25"
         android:secondaryProgress="90"
         android:indeterminateTint="@color/colorPrimary"
-        android:layout_margin="10dp"
+
         android:layout_height="wrap_content"
         />
 
@@ -42,44 +42,52 @@
         android:progress="25"
         android:secondaryProgress="90"
         android:indeterminateTint="@color/colorPrimary"
-        android:layout_margin="10dp"
         android:layout_height="wrap_content"
         />
 
     <ProgressBar
         android:layout_width="match_parent"
-        android:progressTint="@color/colorPrimary"
-        android:secondaryProgressTint="@color/colorAccent"
-        android:indeterminate="false"
-        android:indeterminateTint="@color/colorPrimary"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content"
-        />
+        android:id="@+id/pb1"
+        android:indeterminateDrawable="@drawable/pb1"
+        android:layout_height="wrap_content"/>
 
     <ProgressBar
         android:layout_width="match_parent"
-        android:progressTint="@color/colorPrimary"
-        style="@android:style/Widget.Material.Light.ProgressBar"
-        android:secondaryProgressTint="@color/colorAccent"
-        android:indeterminate="false"
-        android:progress="25"
-        android:secondaryProgress="90"
-        android:indeterminateTint="@color/colorPrimary"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content"
-        />
+        android:id="@+id/pb2"
+        android:indeterminateDrawable="@drawable/pb2"
+        android:layout_height="wrap_content"/>
 
     <ProgressBar
         android:layout_width="match_parent"
-        android:progressTint="@color/colorPrimary"
-        style="@android:style/Widget.Material.Light.ProgressBar"
-        android:secondaryProgressTint="@color/colorAccent"
+        android:id="@+id/pb3"
+        android:indeterminateDrawable="@drawable/pb3"
+        android:indeterminateDuration="@android:integer/config_longAnimTime"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:id="@+id/pb4"
+        android:indeterminateDrawable="@drawable/pb4"
+        android:layout_height="wrap_content"/>
+
+
+    <ProgressBar
+        android:layout_width="70dp"
+        android:id="@+id/pb5"
+        android:progressDrawable="@drawable/determinate_pb1"
         android:indeterminate="false"
-        android:progress="25"
-        android:secondaryProgress="90"
-        android:indeterminateTint="@color/colorPrimary"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content"
-        />
+        style="?android:progressBarStyleHorizontal"
+        android:progress="20"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="70dp"/>
+
+    <ProgressBar
+        android:layout_width="70dp"
+        android:id="@+id/pb6"
+        android:layout_gravity="center_horizontal"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/determinate_pb2"
+        tools:progress="60"
+        android:layout_height="70dp"/>
 
 </LinearLayout>
