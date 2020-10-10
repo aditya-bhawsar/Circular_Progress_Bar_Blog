@@ -2,7 +2,6 @@
 <LinearLayout
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -70,7 +69,6 @@
         android:indeterminateDrawable="@drawable/pb4"
         android:layout_height="wrap_content"/>
 
-
     <ProgressBar
         android:layout_width="70dp"
         android:id="@+id/pb5"
@@ -87,7 +85,7 @@
         android:layout_gravity="center_horizontal"
         android:indeterminateOnly="false"
         android:progressDrawable="@drawable/determinate_pb2"
-        tools:progress="60"
+        tools:progress="10"
         android:layout_height="70dp"/>
 
 </LinearLayout>

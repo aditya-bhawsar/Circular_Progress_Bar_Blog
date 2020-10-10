@@ -1,31 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--A layer list is used when different items are used in one drawable
+such that the one at top appears at the bottom-->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item>
+    <!--if we add this id it will be positioned automatically
+    incase we remove the id its positioning will matter-->
+    <item android:id="@android:id/background">
+
+        <!--Here this shape forms the background of ring
+        here thicknessRatio helps with width of the ring
+        according to the view-->
+
         <shape
             android:shape="ring"
             android:thicknessRatio="15"
-            android:useLevel="false"
-            >
-
-            <solid android:color="#e4e4e4"/>
+            android:useLevel="false">
+            <solid android:color="#e4e4e4" />
 
         </shape>
+
     </item>
 
-    <item>
-        <rotate android:fromDegrees="270"
+    <!--When using a id of progress we dont need to add useLevel-->
+    <item android:id="@android:id/progress">
+
+        <!--Rotate Tag creates the rotation of the shape
+        and helps start the progress bar from top not from
+        right side-->
+        <rotate
+            android:fromDegrees="270"
             android:toDegrees="270">
-        <shape
-            android:shape="ring"
 
-            android:thicknessRatio="15"
-            android:useLevel="true"
-            >
+            <shape
+                android:shape="ring"
+                android:thicknessRatio="15">
 
-            <solid android:color="@color/colorAccent"/>
+                <solid android:color="@color/colorAccent" />
 
-        </shape>
+            </shape>
+
+        </rotate>
+    </item>
+
+    <!--Here the secondary progress will show the secondary progress of
+    the progress bar-->
+    <item android:id="@android:id/secondaryProgress"
+
+        >
+
+        <!--Rotate Tag brings this with the progress so both have same
+         starting point-->
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
+
+            <shape
+                android:shape="ring"
+                android:thicknessRatio="15">
+
+                <solid android:color="@color/colorPrimary" />
+
+            </shape>
+
         </rotate>
     </item>
 

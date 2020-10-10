@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--To make them change with time we need to use a rotate tag-->
+
+<!--fromDegrees is used to set a position for the progress drawable
+to start the rotation from and toDegrees sets where to end the rotation on
+these are required for rotate tag-->
+
+<!--while pivot sets the center for the animation of rotation to occur at-->
+
 <rotate xmlns:android="http://schemas.android.com/apk/res/android"
     android:fromDegrees="-90"
-    android:pivotX="50%"
-    android:pivotY="50%"
     android:toDegrees="270"
+    android:pivotY="50%"
+    android:pivotX="50%"
     >
+
+    <!--Here the rotate is using a shape as a child
+    which means the shape will rotate with it-->
+
+    <!--here we set the shape as ring-->
+
+    <!--use level is very important as it will define
+    if the shape changes according to time or progress
+    for this use case let it be false -->
 
     <shape android:shape="ring"
         android:useLevel="false">
+
+        <!--gradient here is optional you can also use a solid colour -->
 
         <gradient android:useLevel="false"
             android:type="sweep"
