@@ -21,9 +21,32 @@ such that the one at top appears at the bottom-->
 
     </item>
 
+
+    <!--Here the secondary progress will show the secondary progress of
+    the progress bar-->
+    <item android:id="@android:id/secondaryProgress">
+
+        <!--Rotate Tag brings this with the progress so both have same
+         starting point-->
+        <rotate
+
+            android:fromDegrees="270"
+            android:toDegrees="270">
+
+            <shape
+
+                android:shape="ring"
+                android:thicknessRatio="15">
+
+                <solid android:color="@android:color/black" />
+
+            </shape>
+
+        </rotate>
+    </item>
+
     <!--When using a id of progress we dont need to add useLevel-->
     <item android:id="@android:id/progress">
-
         <!--Rotate Tag creates the rotation of the shape
         and helps start the progress bar from top not from
         right side-->
@@ -35,30 +58,11 @@ such that the one at top appears at the bottom-->
                 android:shape="ring"
                 android:thicknessRatio="15">
 
-                <solid android:color="@color/colorAccent" />
-
-            </shape>
-
-        </rotate>
-    </item>
-
-    <!--Here the secondary progress will show the secondary progress of
-    the progress bar-->
-    <item android:id="@android:id/secondaryProgress"
-
-        >
-
-        <!--Rotate Tag brings this with the progress so both have same
-         starting point-->
-        <rotate
-            android:fromDegrees="270"
-            android:toDegrees="270">
-
-            <shape
-                android:shape="ring"
-                android:thicknessRatio="15">
-
-                <solid android:color="@color/colorPrimary" />
+                <gradient android:type="sweep"
+                    android:startColor="@color/colorAccent"
+                    android:centerColor="@color/colorAccent"
+                    android:endColor="@color/colorPrimary"
+                    />
 
             </shape>
 
