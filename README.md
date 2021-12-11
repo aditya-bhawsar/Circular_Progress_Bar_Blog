@@ -1,2 +1,2 @@
-# Circular_Progress_Bar_Blog
+# Circular Progress Bar Blog
 A project made for a blog on circular progress bar
